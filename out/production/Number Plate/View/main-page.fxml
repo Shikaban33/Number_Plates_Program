@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="646.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxControllers.mainPage">
+   <children>
+      <TextField fx:id="pavadinimasSearch" layoutX="36.0" layoutY="110.0" prefHeight="26.0" prefWidth="98.0" promptText="Keywords" />
+      <Label layoutX="266.0" layoutY="50.0" text="Bendra paieška" />
+      <TableView fx:id="numberTableView" layoutX="36.0" layoutY="138.0" prefHeight="431.0" prefWidth="725.0">
+        <columns>
+          <TableColumn fx:id="nameTableCol" prefWidth="95.20000839233398" text="Pavadinimas" />
+          <TableColumn fx:id="costTableCol" prefWidth="105.60000610351562" text="Kaina" />
+            <TableColumn fx:id="formTableCol" prefWidth="114.40003967285156" text="Forma" />
+            <TableColumn fx:id="typeTableCol" prefWidth="80.79998779296875" text="Tipas" />
+            <TableColumn fx:id="lookTableCol" prefWidth="95.99993896484375" text="Isvaizda" />
+            <TableColumn fx:id="dateTableCol" prefWidth="129.60003662109375" text="Patalpinimo data" />
+            <TableColumn fx:id="userTableCol" prefWidth="97.5999755859375" text="Savininkas" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textfieldNr1" layoutX="359.0" layoutY="46.0" promptText="Keywords" />
+      <Button fx:id="goToInsertPageBtnID" layoutX="619.0" layoutY="590.0" mnemonicParsing="false" onAction="#goToInsertPageBtn" prefHeight="34.0" prefWidth="142.0" text="Įkelti numerius" />
+      <Button fx:id="deleteDataID" layoutX="36.0" layoutY="590.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="34.0" prefWidth="142.0" text="Ištrinti numerius" />
+      <Button fx:id="goToEditPageBtnID" layoutX="327.0" layoutY="590.0" mnemonicParsing="false" onAction="#goToEditPageBtn" prefHeight="34.0" prefWidth="142.0" text="Redaguoti numerius" />
+      <TextField fx:id="savininkasSearch" layoutX="661.0" layoutY="110.0" prefHeight="26.0" prefWidth="98.0" promptText="Keywords" />
+      <DatePicker fx:id="dateToSearch" layoutX="530.0" layoutY="110.0" prefHeight="26.0" prefWidth="131.0" />
+      <DatePicker fx:id="dateFromSearch" layoutX="530.0" layoutY="46.0" prefHeight="26.0" prefWidth="131.0" />
+      <Label layoutX="530.0" layoutY="22.0" text="Data nuo" />
+      <Label layoutX="530.0" layoutY="85.0" text="Data iki" />
+      <TextField fx:id="kainaIkiSearch" layoutX="134.0" layoutY="110.0" prefHeight="26.0" prefWidth="106.0" promptText="Keywords" />
+      <TextField fx:id="kainaNuoSearch" layoutX="134.0" layoutY="46.0" prefHeight="26.0" prefWidth="106.0" promptText="Keywords" />
+      <Label layoutX="134.0" layoutY="19.0" text="Kaina nuo" />
+      <Label layoutX="134.0" layoutY="82.0" text="Kaina iki" />
+      <ChoiceBox fx:id="formChoiceBoxSearch" disable="true" layoutX="240.0" layoutY="111.0" opacity="0.0" prefHeight="26.0" prefWidth="114.0" />
+     </children>
+</AnchorPane>
